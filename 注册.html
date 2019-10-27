@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var zcname=document.getElementsByClassName('zc_name')[0]
+				var zcpassword=document.getElementsByClassName('zc_password')[0]
+				var zcrightword=document.getElementsByClassName('zc_tureword')[0]
+				var zcbtn2=document.getElementById('zc_btn2')
+				re1=/^0?(13|14|15|18|17)[0-9]{9}$/
+				// re1=/0?(13|14|15|17|18)[0-9]{9}/
+				re2=/^\w{6}$/
+				zcbtn2.onclick=function(){
+					if(re1.test(zcname.vaule)){
+						if(re2.test(zcpassword.vaule)){
+							if(zcrightword.vaule===zcpassword.vaule){
+								alert('注册成功')
+							}else{
+								alert('两次密码格式不一致')
+							}
+						}else{
+							alert('密码格式错误')
+						}
+					}else{
+						alert('请输入正确的电话号码')
+					}
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div class="zc_box">
+			<form >
+				<div>
+					<span>账号</span>
+					<input class="zc_name" type="text" placeholder="请输入11位电话号码">
+				</div>
+				<div>
+					<span>密码</span>
+					<input class="zc_password" type="password" placeholder="请输入6位密码">
+				</div>
+				<div>
+					<span>确认密码</span>
+					<input class="zc_tureword" type="password" placeholder="请再次输入密码">
+				</div>
+				<div>
+					<input type="text" name="" id="little_letter" placeholder="请输入短信验证码" />
+				
+				</div>
+				<input type="reset" name="" id="zc_btn1" value="重置" />
+				<input type="button" name="" id="zc_btn2" value="提交" />
+			</form>
+		</div>
+	</body>
+</html>

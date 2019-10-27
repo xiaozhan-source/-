@@ -1,0 +1,773 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	border-color: white;
+}
+#mi_bigbox{
+	position: relative;
+}
+/* 导航栏部分开始 */
+.mi_nav{
+	width: 1366px;
+	height: 49px;
+	background-color:#333333;
+	
+}
+.mi_navbox{
+	width: 1080px;
+	margin: 0px auto;
+}
+.mi_nboxson{
+	color: #e7e7e7;
+	float: right;
+	/* padding:0px 14px ; */
+	line-height: 49px;
+}
+.mi_nboxson a{
+	border-right: 2px solid #666666;
+	padding:0px 14px;
+	cursor:pointer;
+	color: #E7E7E7;
+}
+.mi_nboxson:hover{
+	color: white;
+}
+.mi_nboxson>a:hover{
+	color: #845f3f;
+}
+/* 导航栏结束 */
+/* 菜单栏开始 */
+/*菜单栏-----------搜索栏*/
+.mi_menu{
+	width: 1080px;
+	height: 435px;
+	margin:16px auto ;
+	margin-bottom: 0px;
+}
+.mi_menutop{
+	height: 51px;
+	width: 1080px;
+	/* background-color: pink; */
+	/* margin: 13px 0px ; */
+	padding: 0px 40px 0px 0px;
+}
+
+.mi_logo>img{
+	width: 118px;
+	height: 51px;
+	float: left;
+}
+.mi_goshop{
+	float: left;
+	line-height: 51px;
+	padding-left: 140px;
+}
+.mi_goshop>a{
+	color: #666666;
+	font-size: 18px;
+}
+.mi_search{
+	width: 281px;
+	height: 42px;
+	line-height: 42px;
+	float: right;
+	/* padding-left:405px; */
+	border-bottom: 1px solid #e7e7e7;
+}
+.fangdajing{
+	width: 30px;
+	height: 30px;
+	line-height: 42px;
+	background: url(../img/精灵图.png);
+	background-position:0px -1458px ;
+	float: left;
+	margin-top: 6px;
+	cursor: pointer;
+}
+.fangdajing:hover{
+	background-position:0px -1425px ;
+}
+.divinput{
+	width: 240px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	padding: 9px 0px 0px 0px ;
+}
+.divinput>input{
+	float:left;
+	width: 245px;
+	height: 18px;
+	line-height: 42px;
+	border: 0px;
+	padding-top:3px ;
+	outline: none;
+}
+.mi_shopcar{
+	width: 30px;
+	height: 30px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -948px;
+	float: right;
+	margin-top:10px ;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.mi_shopcar:hover{
+	background-position:0px -1186px ;
+}
+/*菜单栏----------分类栏*/
+.mi_menu_down{
+	width: 1080px;
+	height: 358px;
+}
+.mi_mdown_left{
+	width: 221px;
+	height: 358px;
+	float: left;
+	background-color: #845f3f;
+	position: relative;
+}
+.mdown_fenlei{
+	/* display: block; */
+	padding-top: 8px;
+	padding-left: 35px;
+}
+.mdown_fenlei>li{
+	width: 225px;
+	/* height: 37px; */
+	line-height: 37px;
+	color: white;
+	
+}
+.mdown_fenlei>li>a{
+	font-size: 14px;
+	cursor: pointer;
+}
+.mdown_fenlei>li>a:hover{
+	color: #e4af82;
+}
+.mdown_fenlei_img li{
+	display: none;
+}
+.mdown_fenlei_img img{
+	width: 300px;
+	height: 300px;
+	float: left;
+	position: absolute;
+	right: -300px;
+	top: 20px;
+	z-index: 999;
+	
+}
+.mdown_fenlei_img img:nth-child(1){
+	/* display: block; */
+}
+/* 菜单栏---图片栏开始 */
+.mi_mdown_right{
+	width: 850px;
+	height: 358px;
+	float: left;
+	background: url(../img/背景图/背景图2.jpg);
+	background-size: 850px 358px;
+	position: relative;
+}
+.btn1{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	top: 50%;
+	margin-top: -19px;
+	left: 0px;
+	background: url(../img/精灵图.png) no-repeat ;
+	background-position: 0px -1924px;
+}
+.btn1:hover{
+	background-position: 0px -1798px;
+}
+.btn2{
+	background-color: pink;
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	top: 50%;
+	margin-top: -19px;
+	right: 0px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -1840px;
+}
+.btn2:hover{
+	background-position: 0px -1882px;
+}
+.circle{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -80px;
+}
+.circle>li{
+	width: 10px;
+	height: 10px;
+	border: 1px solid white;
+	border-radius: 50%;
+	background-color: white;
+	float: left;
+	margin:0px 5px;
+}
+/* 菜单栏结束 */
+/* 圆形菜单开始 */
+.mi_circle_menu{
+	width: 1080px;
+	height: 190px;
+	margin: 0px auto;
+}
+.cirmenu{
+	
+}
+.cirmenu li{
+	float: left;
+	cursor: pointer;
+	padding: 25px;
+	margin-right:105px ;
+}
+.cirmenu li:last-child{
+	margin-right: 0px;
+}
+.cirmenu li>img{
+	width: 80px;
+	height: 80px;
+}
+.cirmenu li>p{
+	font: 14px;
+	color: #666666;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+/* 小米众筹开始 */
+/* 小米众筹顶部开始 */
+.mi_zhongchou{
+	width: 1080px;
+	height: 302px;
+	margin: 0px auto;
+}
+.zhongchou_top{
+	width: 1080px;
+	height: 37px;
+	
+}
+.zhongchou_top h2{
+	/* float: left; */
+	display: inline-block;
+}
+.zhongchou_top>span{
+	font-size: 14px;
+	color: #999999;
+	padding-left: 12px;
+}
+.zhongchou_tright{
+	float: right;
+}
+.zhongchou_tright span{
+	font-size: 14px;
+	line-height: 37px;
+	color: #999999;
+	cursor: pointer;
+}
+.zhongchou_more{
+	width: 30px;
+	height: 30px;
+	margin-top: 3px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -1118px;
+	float: right;
+	cursor: pointer;
+}
+/* 小米众筹底部开始 */
+.zhongchou_bottom{
+	width: 1080px;
+	height: 245px;
+	position: relative;
+}
+/* 众筹电暖气 */
+.zc_btm_dnq{
+	width: 537px;
+	height: 210px;
+	float: left;
+	position: relative;
+	background: #F9F3E9;
+	cursor: pointer;
+}
+.zc_btm_dnq_div1{
+	position: absolute;
+	padding: 25px 0px 0px 23px;
+}
+.zc_btm_dnq_div1 P:first-child{
+	font-size: 20px;
+	color: #333333;
+}
+.zc_btm_dnq_div1>p:nth-child(2){
+	font-size: 16px;
+	color: #999999;
+	margin: 8px 0px;
+}
+.zc_btm_dnq_div1>p>span:nth-child(1){
+	font-size: 15;
+	color: #A92112;
+}
+.zc_btm_dnq_div1>p>span:nth-child(2){
+	font-size: 24px;
+	color: #A92112;
+}
+.zc_btm_dnq>img{
+	width: 215px;
+	height: 215px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.zc_btm_dnq_div2{
+	width: 537px;
+	height: 22px;
+	position: absolute;
+	bottom: -30px;
+}
+.zc_btm_dnq_div2_1{
+	float: left;
+}
+.zc_btm_dnq_div2_1>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.zc_btm_dnq_div2_1>span:last-child{
+	font-size: 18px;
+	color: #999999;
+}
+.zc_btm_dnq_div2>span{
+	background-color: #F62700;
+	color: white;
+	font-size: 13px;
+	padding: 0px 6px;
+	margin-left: 3px;
+}
+.zc_btm_dnq_div2_2{
+	float: right;
+}
+.zc_btm_dnq_div2_2>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.zc_btm_dnq_div2_2>span:last-child{
+	font-size: 12px;
+	color: #A92112;
+}
+/* 众筹手表 */
+.zc_btm_sb{
+	width: 260px;
+	height: 210px;
+	background: #F8F8F8;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.zc_btm_sb_div1{
+	position: absolute;
+	width: 260px;
+	height: 210px;
+	padding: 0px 0px 0px 23px;
+}
+.zc_btm_sb_div1>p:nth-child(1){
+	font-size: 20px;
+	color: #333333;
+	padding-top: 25px;
+}
+.zc_btm_sb_div1>p:nth-child(2){
+	margin-top: 12px;
+}
+.zc_btm_sb_div1>p>span:nth-child(1){
+	font-size: 12px;
+	color: #A92112;
+}
+
+.zc_btm_sb_div1>p>span:nth-child(2){
+	font-size: 20px;
+	color: #A92112;
+}
+.zc_btm_sb>img{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	right: 10px;
+	bottom: 25px;
+}
+.zc_btm_sb_div2{
+	width: 260px;
+	height: 22px;
+	position: absolute;
+	bottom: -30px;
+}
+.zc_btm_sb_div2_1{
+	float: left;
+}
+.zc_btm_sb_div2_1>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.zc_btm_sb_div2_1>span:last-child{
+	font-size: 18px;
+	color: #999999;
+}
+.zc_btm_sb_div2>span{
+	background-color: #F62700;
+	color: white;
+	font-size: 13px;
+	padding: 0px 6px;
+	margin-left: 3px;
+}
+.zc_btm_sb_div2_2{
+	float: right;
+}
+.zc_btm_sb_div2_2>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.zc_btm_sb_div2_2>span:last-child{
+	font-size: 12px;
+	color: #A92112;
+}
+/* 众筹暖星杯 */
+.zc_btm_nxb{
+	width: 260px;
+	height: 210px;
+	background: #F8F8F8;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.zc_btm_nxb_div1{
+	position: absolute;
+	width: 260px;
+	height: 210px;
+	padding: 0px 0px 0px 23px;
+}
+.zc_btm_nxb_div1>p:nth-child(1){
+	font-size: 20px;
+	color: #333333;
+	padding-top: 25px;
+}
+.zc_btm_nxb_div1>p:nth-child(2){
+	margin-top: 12px;
+}
+.zc_btm_nxb_div1>p>span:nth-child(1){
+	font-size: 12px;
+	color: #A92112;
+}
+.zc_btm_nxb_div1>p>span:nth-child(2){
+	font-size: 20px;
+	color: #A92112;
+}
+.zc_btm_nxb>img{
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	right: 10px;
+	bottom: 25px;
+}
+.zc_btm_nxb_div2{
+	width: 260px;
+	height: 22px;
+	position: absolute;
+	bottom: -30px;
+}
+.zc_btm_nxb_div2_1{
+	float: left;
+}
+.zc_btm_nxb_div2_1>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.zc_btm_nxb_div2_1>span:last-child{
+	font-size: 18px;
+	color: #999999;
+}
+.zc_btm_nxb_div2>span{
+	background-color: #F62700;
+	color: white;
+	font-size: 13px;
+	padding: 0px 6px;
+	margin-left: 3px;
+}
+.zc_btm_nxb_div2_2{
+	float: right;
+}
+.zc_btm_nxb_div2_2>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.zc_btm_nxb_div2_2>span:last-child{
+	font-size: 12px;
+	color: #A92112;
+}
+/* 限时购开始 */
+/* 限时购上部 */
+.mi_timeshop{
+	width: 1080px;
+	height: 451px;
+	margin: 0px auto;
+	cursor: pointer;
+}
+.timeshop_top{
+	width: 1080px;
+	height: 37px;
+	margin: 20px 0px;
+}
+.tshop_top_left{
+	float: left;
+	
+}
+.tshop_top_left>span{
+	font-size: 28px;
+	color: #333333;
+}
+.tshop_top_left>img{
+	width: 18px;
+	height: 18px;
+	
+}
+.tshop_top_left>span:last-child{
+	font-size: 18px;
+	color: #A92112;
+}
+.tshop_top_middle{
+	margin-top:12px;
+	margin-left: 5px;
+	display: inline-block;
+}
+.tshop_top_middle span:nth-child(2n-1){
+	background-color: #B04337;
+	padding: 2px 3px;
+	color: white;
+	font-size: 15px;
+}
+.tshop_top_middle span:nth-child(2n){
+	color: #B04337;
+}
+.tshop_top_right{
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	font-size: 14px;
+	color: #999999;
+}
+ /* 限时购下部 */
+ .timeshop_bottom{
+	 width: 1080px;
+	 height: 354px;
+	 overflow: hidden;
+	 position: relative;
+ }
+ .timeshop_bottom>div{
+	 width: 266px;
+	 float: left;
+	 padding: 0px 2px;
+ }
+ .tshop_btm_ware{
+	 font-size: 0px;
+	 /* position: absolute; */
+	 /* left: -266px; */
+ }
+ .tshop_btm_ware:hover{
+	 
+ }
+ .timeshop_bottom>div>img{
+	 width: 266px;
+	 height:266px;
+	 
+ }
+.tshop_btm_money{
+	width: 266px;
+	height: 88px;
+	background-color: #FAF6EF;
+	text-align: center;
+}
+.tshop_btm_money>p:first-child{
+	font-size: 19px;
+	color: #333333;
+	padding-top: 5px;
+}
+.tshop_btm_money>p:nth-child(2){
+	margin-top: 11px ;
+}
+.tshop_btm_money>p>span:first-child{
+	font-size: 18px;
+	color: #A92112;
+	padding: 0px;
+	margin: 0px;
+	
+}
+.tshop_btm_money>p>span:nth-child(2){
+	font-size: 14px;
+	color: #A92112;
+}
+.tshop_btm_money>p>span:nth-child(3){
+	font-size: 14px;
+	color: #333333;
+	letter-spacing: 0px;
+	text-decoration: line-through;
+}
+.tshop_btn1{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	margin-top: -19;
+	background: url(../img/精灵图.png);
+	background-position: 0px -1924px;
+}
+.tshop_btn1:hover{
+	background-position:0px -1798px;
+}
+.tshop_btn2{
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	margin-top: -19;
+	background: url(../img/精灵图.png);
+	background-position: 0px -1840px;
+}
+.tshop_btn2:hover{
+	background-position: 0px -1882px;
+}
+/* 底部信息栏开始 */
+.mi_buttom{
+	width: 1366px;
+	
+}
+.mi_buttom>hr{
+	width: 1366px;
+	color: #e3e3e3;
+}
+.mi_btmbox{
+	width: 1080px;
+	height: 92px;
+	margin: 30px auto;
+}
+.mi_btmbox_left{
+	float: left; 
+}
+.mi_btmbox_left>img{
+	width: 123px;
+	height: 45px;
+}
+.mi_btmbox_middle{
+	float: left;
+	/* margin: 0px auto; */
+	padding-left:160px ;
+}
+.mi_btmbox_right{
+	float: right;
+}
+.mi_btmbox_middle p{
+	font-size: 12px;
+	color: #666666;
+	padding: 5px 0px;
+}
+.mi_btmbox_right>img{
+	width: 100px;
+	height: 36px;
+}
+/* 右侧悬浮框开始 */
+.mi_fixed{
+	width: 81px;
+	height: 360px;
+	position: fixed;
+	right: 10px;
+	bottom: 40px;
+	background-color: gainsboro;
+	/* opacity: ; */
+}
+.fixed_box>li{
+	width: 70px;
+	height: 60px;
+	padding: 5px;
+	cursor: pointer;
+}
+.fixed_box>li>img{
+	display: none;
+}
+.fixed_call>div{
+	width: 30px;
+	height: 30px;
+	background:url(../img/精灵图.png);
+	background-position: 0px -1628px;
+	margin: 0px auto;
+}
+.fixed_call p{
+	font-size:12px;
+	color: #333333;
+	text-align: center;
+	padding-top: 10px;
+}
+.fixed_down>div{
+	width: 30px;
+	height: 30px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -1253px;
+	margin: 0px auto;
+}
+.fixed_down p{
+	font-size: 12px;
+	color: #333333;
+	text-align: center;
+	/* padding-top: 10px; */
+}
+.fixed_down>p:first-child{
+	padding-top: 10px;
+}
+.fixed_new>div{
+	width: 30px;
+	height: 30px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -775px;
+	margin: 0px auto;
+}
+.fixed_new p{
+	font-size: 12px;
+	color: #333333;
+	text-align: center;
+	padding-top: 10px;
+}
+.fixed_weixin>div{
+	width: 30px;
+	height: 30px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -980px;
+	margin: 0px auto;
+}
+.fixed_weixin p{
+	font-size: 12px;
+	color: #333333;
+	text-align: center;
+	padding-top: 10px;
+}
+.fixed_top>div{
+	width: 30px;
+	height: 30px;
+	background: url(../img/精灵图.png);
+	background-position: 0px -1289px;
+	margin: 0px auto;
+}
+.fixed_top p{
+	font-size: 12px;
+	color: #333333;
+	text-align: center;
+	padding-top: 10px;
+}

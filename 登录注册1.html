@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				text-decoration:none;
+			}
+			#bigbox{
+				width: 1366px;
+				height: 700px;
+				/* border: 1px solid red; */
+				margin: 0px auto;
+				background: url(img/登录/e8201bfbb8c9d474a48da76f7d81a5c7.jpg) no-repeat;
+				background-size: 1366px 700px;
+				position: relative;
+			}
+			.dl_logo{
+				width: 150px;
+				height: 80px;
+				background: url(img/logo.d1484e61.png);
+				background-size: 150px 80px;
+				margin-left: 30px;
+			}
+			.formbox{
+				width: 400px;
+				height: 300px;
+				background-color: white;
+				position: absolute;
+				right: 80px;
+				top: 40px;
+				
+			}
+			.box{
+				margin: opx auto;
+			}
+			.biaotou{
+				display: inline-block;
+				width: 100px;
+				height: 30px;
+				font-size: 18px;
+				color: orangered;
+				background-color: white;
+				text-align: center;
+				margin:20px 0px 0px 90px;
+			}
+			.name{
+				width: 250px;
+				height: 40px;
+				font-size: 14px;
+				/* text-align: center; */
+				margin:10px 0px;
+				margin-left: 40px;
+			}
+			a{
+				display: inline-block;
+				width: 100px;
+				height: 30px;
+				text-align: center;
+				padding: 10px;
+				background-color: orangered;
+				margin-top:10px ;
+			}
+			.zhuce{
+				margin-left: 10px;
+			}
+			.dl_btn{
+				margin-left: 40px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var myname=document.getElementsByClassName('name')[0]
+				var nosay=document.getElementsByClassName('nosay')[0]
+				var yes=document.getElementsByClassName('denglu')[0]
+				ran1=/^[a-zA-Z]{1}\w+@(([q]{2})|([1][6][3])|([1][3][9])|([y][e][a][h]))[.]([c][o][m])$/;
+				ran2=/^\w{6}$/
+				yes.onclick=function(){
+					if(ran1.test(myname.value)){
+						if(ran2.test(nosay.value)){
+							alert('登录成功')
+						}else{
+							alert('密码错误')
+						}
+					}else{
+						alert('账号错误')
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="dl_logo">
+				
+		</div>
+		<div id="bigbox">
+			
+			<form  class="formbox">
+				<div class="box">
+					<a class="biaotou">账号登录</a>
+					<input class="name" type="text" placeholder="请输入邮箱" />
+					<input class=" name nosay" type="password" placeholder="请输入密码" /><br />
+					<div class="dl_btn">
+						<a class="denglu" href="">登录</a>
+						<a class="zhuce" href="注册.html" target="_blank">注册</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
